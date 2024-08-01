@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>회원가입</title>
+  <link rel="stylesheet" href="./../hidden/center_view.css">
+  <!-- 중앙에 동그란 직사각형 -->
+</head>
+<body bgcolor="white">
+<div class="background">
+    <div class="center_view">
+  <br><br>
+  <center>
+    <img src="./../icon/workingnote_icon.jpg" style="width:30%; height:30%;">
+  </center>
+  <!-- WN 로고 출력 -->
+
+  <center>
+    <font size=5><b id="loginTitle">회원가입</b></font><br><br>
+    <FORM  NAME="sign_up_form" ACTION="sign_up.php" METHOD="post">
+        <TABLE WIDTH="300">
+        <TR>
+         <TD  align="center" WIDTH="90"><B>ID</B></TD>
+         <TD ><INPUT TYPE="text" name="id" SIZE="10"></TD>
+        </TR><TR>
+         <TD  align="center" FONT COLOR="Navy"><B>비밀번호</B></TD>
+         <TD ><INPUT TYPE="password" name="password" SIZE="10"></TD>
+       </TR><TR>
+         <TD  align="center" FONT COLOR="Navy"><B>성명</B></TD>
+         <TD ><INPUT TYPE="text" name="name" SIZE="10"></TD>
+       </TR><TR>
+         <TD  align="center" FONT COLOR="Navy"><B>성별</B></TD>
+         <TD >
+           <input type=radio name=sex value='M' checked>남
+              <input type=radio name=sex value='F'>여</TD>
+       </TR><TR>
+         <TD  align="center" FONT COLOR="Navy"><B>전화번호</B></TD>
+         <TD ><INPUT TYPE="text" name="phone" SIZE="12"></TD>
+       </TR>
+       </TABLE>
+       <TABLE >
+       <TR>
+         <TD  align="center" FONT COLOR="Navy"> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <B>이메일</B></TD>
+         <TD >
+            &nbsp;&nbsp;&nbsp;
+            <INPUT TYPE="text" name="email_id" SIZE="9">@
+            <INPUT TYPE="text" name="email_site" SIZE="9">
+         </TD>
+       </TR><TR><TD COLSPAN=2 > &nbsp; </TD></TR>
+       <TR> <TD COLSPAN=2  ALIGN="center">
+         <INPUT TYPE="submit" VALUE="     전송     ">
+            </TD>
+            </TR>
+            </TABLE>
+            <br>
+    <font size=4 id="accountStatus">이미 계정이 있나요?<font color="blue" onclick="GoToSignIn()"> 로그인 하러가기</font></font>
+	<br><br>
+  </center>
+</div>
+</div>
+<script>
+    function GoToSignIn(){
+    window.location.href = './..';
+}
+</script>
+</body>
+</html>

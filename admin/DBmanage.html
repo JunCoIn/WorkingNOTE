@@ -1,0 +1,47 @@
+<HTML>
+    <head>
+      <link rel="stylesheet" href="center_view.css">
+      <!-- 중앙에 동그란 직사각형 -->
+      <link rel="stylesheet" href="DBmanage.css">
+      <style>
+      .back_button {
+        width: 200px;
+        height: 30px;
+        background-color: white;
+        border: 1px solid #000;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        transition: background-color 0.3s ease;
+      }
+      .back_button:hover {
+        background-color: lightgray; /* 마우스 호버 시 배경색 변경 */
+      }
+      </style>
+      </head>
+     <body>
+     <div class="background">
+        <div class="center_view">
+    <H1><center> DB 관리 </center></H1>
+    <center><font size=4 color=red><b>※ 관리 주의 요망 ※</b></font></center>
+    <center><button class="back_button" onclick="GoToHidden()">관리자 페이지로 돌아가기</button></center>
+    <br>
+    <center>
+    <FORM NAME="Membership_reset" ACTION="DB_Membership_reset.php">
+    <INPUT class="DB_Membership_reset" TYPE="submit" VALUE="회원DB 초기화"></FORM>
+    <FORM NAME="Office_reset" ACTION="DB_Office_reset.php">
+    <INPUT class="DB_Membership_reset" TYPE="submit" VALUE="회사DB 초기화"></FORM>
+    </center>
+    
+    </div></div>
+    <script>
+        function GoToHidden() {
+        window.location.href = 'Hidden.html';		
+    }
+    
+    </script>
+    </body></html>
+    

@@ -1,0 +1,125 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+  .background {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BDBDBD;
+    background-image: url("./icon/login_back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .center_view {
+    position: relative; /* 부모 요소로부터의 상대 위치 설정 */
+    width: 780px; /* 원하는 너비 */
+    height: 400px; /* 원하는 높이 */
+    border: 2px solid #ffffff; /* 테두리 스타일 지정 */
+    border-radius: 10px; /* 테두리의 둥근 정도를 설정 */
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.5); /* 그림자 효과 설정 */
+    box-sizing: border-box; /* 테두리를 포함한 전체 크기를 설정 */
+    background-color: #ffffff;
+    text-align: center; /* 내부 요소들을 가운데 정렬하기 위해 추가 */
+  }
+
+  .center_view img.logo {
+    position: absolute;
+    width: 37%; /* 부모 요소인 .center_view의 너비에 상대적인 크기 */
+    top: 2%; /* 부모 요소인 .center_view의 높이에 상대적인 위치 */
+    left: 14%; /* 부모 요소인 .center_view의 너비에 상대적인 위치 */
+  }
+  .center_view img.qr {
+    position: absolute;
+    height: 220px;
+    width: 220px;
+    top: 5%; /* 부모 요소인 .center_view의 높이에 상대적인 위치 */
+    left: 67%; /* 부모 요소인 .center_view의 너비에 상대적인 위치 */
+  }
+  .center_view .atext {
+    position: absolute;
+    width: 20%; /* 부모 요소인 .center_view의 너비에 상대적인 크기 */
+    top: 27%; /* 부모 요소인 .center_view의 높이에 상대적인 위치 */
+    left: 7%; /* 부모 요소인 .center_view의 너비에 상대적인 위치 */
+  }
+  .center_view .btext {
+    position: absolute;
+    width: 35%; /* 부모 요소인 .center_view의 너비에 상대적인 크기 */
+    top: 35%; /* 부모 요소인 .center_view의 높이에 상대적인 위치 */
+    left: 7%; /* 부모 요소인 .center_view의 너비에 상대적인 위치 */
+  }
+  .center_view .ctext {
+    position: absolute;
+    width: 35%; /* 부모 요소인 .center_view의 너비에 상대적인 크기 */
+    top: 47%; /* 부모 요소인 .center_view의 높이에 상대적인 위치 */
+    left: 7%; /* 부모 요소인 .center_view의 너비에 상대적인 위치 */
+  }
+  .center_view .dtext {
+    position: absolute;
+    width: 35%; /* 부모 요소인 .center_view의 너비에 상대적인 크기 */
+    top: 55%; /* 부모 요소인 .center_view의 높이에 상대적인 위치 */
+    left: 7%; /* 부모 요소인 .center_view의 너비에 상대적인 위치 */
+  }
+  .center_view .etext {
+    position: absolute;
+    width: 35%; /* 부모 요소인 .center_view의 너비에 상대적인 크기 */
+    top: 86%; /* 부모 요소인 .center_view의 높이에 상대적인 위치 */
+    left: 3%; /* 부모 요소인 .center_view의 너비에 상대적인 위치 */
+  }
+  .center_view .ftext {
+    position: absolute;
+    width: 35%; /* 부모 요소인 .center_view의 너비에 상대적인 크기 */
+    top: 65%; /* 부모 요소인 .center_view의 높이에 상대적인 위치 */
+    left: 7%; /* 부모 요소인 .center_view의 너비에 상대적인 위치 */
+  }
+  .center_view .gtext {
+    position: absolute;
+    width: 30%; /* 부모 요소인 .center_view의 너비에 상대적인 크기 */
+    top: 60%; /* 부모 요소인 .center_view의 높이에 상대적인 위치 */
+    left: 66%; /* 부모 요소인 .center_view의 너비에 상대적인 위치 */
+  }
+  .center_view .htext {
+    position: absolute;
+    width: 30%; /* 부모 요소인 .center_view의 너비에 상대적인 크기 */
+    top: 74%; /* 부모 요소인 .center_view의 높이에 상대적인 위치 */
+    left: 66%; /* 부모 요소인 .center_view의 너비에 상대적인 위치 */
+  }
+
+  .center_view form {
+    margin-top: 30px; /* 폼과 로그인 텍스트 사이의 간격 설정 */
+  }
+
+  .center_view input[type="text"] {
+    height: 22px; /* 원하는 높이(px)로 설정 */
+    width: 390px; /* 원하는 너비(px)로 설정 */
+    font-size: 18px; /* 원하는 폰트 크기(px)로 설정 */
+    padding: 8px; /* 내부 여백 설정 */
+    border: 1px solid #ccc; /* 테두리 스타일 설정 */
+    border-radius: 4px; /* 테두리의 둥근 정도 설정 */
+  }
+  .center_view input[type="password"] {
+    height: 22px; /* 원하는 높이(px)로 설정 */
+    width: 390px; /* 원하는 너비(px)로 설정 */
+    font-size: 18px; /* 원하는 폰트 크기(px)로 설정 */
+    padding: 8px; /* 내부 여백 설정 */
+    border: 1px solid #ccc; /* 테두리 스타일 설정 */
+    border-radius: 4px; /* 테두리의 둥근 정도 설정 */
+  }
+  .center_view input[type="submit"] {
+    color: black;
+    position: absolute;
+    width: 35%; /* 부모 요소인 .center_view의 너비에 상대적인 크기 */
+    top: 72%; /* 부모 요소인 .center_view의 높이에 상대적인 위치 */
+    left: 7%; /* 부모 요소인 .center_view의 너비에 상대적인 위치 */
+    height: 45px; /* 원하는 높이(px)로 설정 */
+    width: 408px; /* 원하는 너비(px)로 설정 */
+    font-size: 20px; /* 원하는 폰트 크기(px)로 설정 */
+    padding: 8px; /* 내부 여백 설정 */
+    border: 1px solid #ccc; /* 테두리 스타일 설정 */
+    border-radius: 4px; /* 테두리의 둥근 정도 설정 */
+    background: #46CCFF;
+  }

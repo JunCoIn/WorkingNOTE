@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>로그인 창</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body bgcolor="white">
+<div class="background">
+    <div class="center_view">
+        <img src="./icon/workingnote_icon.jpg" class="logo">
+		<img src="./icon/QRcode.jpg" class="qr">
+
+        <!-- WN 로고를 왼쪽 상단에 배치 -->
+
+        <!-- 로그인 글자 출력-->
+        <form name="sign_in_form" action="./sign/sign_in.php" method="post">
+            <table width="250">
+                <tr>
+                    <td align="left" width="90" class=atext><b>
+					<font size="4">아이디</font></b></td>
+				</tr>
+				<tr>
+                    <td><input type="text" name="id" class=btext></td>
+                </tr>
+                <tr>
+                    <td align="left" class=ctext><b>
+					<font size="4">비밀번호</font></b></td>
+				</tr>
+				<tr>
+                    <td align="left" width="90" class=ftext><b>
+					<font size="2" color="blue">아이디 또는 비밀번호를 잊으셨나요?</font></b></td>
+				</tr>
+                <tr>
+                    <td><input type="password" name="password" class=dtext></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+            <input type="submit" value="로그인">
+        </form>
+        <font size="3" class=etext>계정이 필요한가요?<font color="blue" onclick="GoToSignUp()"><b> 가입하기 </b></font></font>
+        <!-- 회원가입 버튼 -->
+        <br><br>
+		<b><font size="5" color="black" class="gtext">QR 코드로 로그인</font></b>
+		<font size="3" color="black" class="htext"><b>WorkingNOTE 모바일 앱</b>으로<br>
+		스캔해 바로 로그인하세요.</font>
+    </div>
+</div>
+<script>
+function GoToSignUp(){
+    window.location.href = './sign/sign_up.html';
+}
+</script>
+</body>
+</html>

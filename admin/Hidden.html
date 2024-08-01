@@ -1,0 +1,35 @@
+<HTML>
+    <head>
+      <link rel="stylesheet" href="center_view.css">
+      <!-- 중앙에 동그란 직사각형 -->
+      <link rel="stylesheet" href="Hidden_button.css">
+      </head>
+     <body>
+     <div class="background">
+        <div class="center_view">
+    <H1><center> 관리자 페이지 </center></H1>
+    <center><button class="back_button" onclick="GoToIndex()">메인화면으로 돌아가기</button></center>
+    <center>
+    <button class="DB_manage_button" onclick="GoToDBmanage()">DB 관리</button>
+    <button class="Membership_button" onclick="GoToMembership()">회원관리</button>
+    <button class="Membership_button" onclick="GoToOffice()">회사관리</button>
+    </center>
+    
+    </div></div>
+    <script>
+        function GoToMembership() {
+        window.location.href = 'Membership_list.php';		
+    }
+        function GoToOffice() {
+        window.location.href = 'Office_list.php';		
+    }
+        function GoToIndex() {
+        window.location.href = './..';		
+    }
+        function GoToDBmanage() {
+        window.location.href = 'DBmanage.html';		
+    }
+    
+    
+    </script>
+    </body></html>

@@ -1,0 +1,50 @@
+.back_button {
+    width: 200px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid #000;
+	border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-top: 20px;
+	transition: background-color 0.3s ease;
+  }
+  .back_button:hover {
+    background-color: lightgray; /* 마우스 호버 시 배경색 변경 */
+  }
+
+.DB_manage_button {
+    width: 100px;
+    height: 60px;
+    background-color: white;
+    border: 1px solid #000;
+	border-radius: 10px;
+    cursor: pointer;
+	margin: 20px; /* 버튼 사이 간격 조정 */
+    justify-content: center;
+    align-items: center;
+	margin-top: 10px;
+	transition: background-color 0.3s ease;
+  }
+.DB_manage_button:hover {
+    background-color: lightgray; /* 마우스 호버 시 배경색 변경 */
+  }
+.Membership_button {
+    width: 100px;
+    height: 60px;
+    background-color: white;
+    border: 1px solid #000;
+	border-radius: 10px;
+    cursor: pointer;
+    display: inline-block; /* 인라인 블록 요소로 변경 */
+	margin: 10px; /* 버튼 사이 간격 조정 */
+    justify-content: center;
+    align-items: center;
+	margin-top: 20px;
+	transition: background-color 0.3s ease;
+  }
+  .Membership_button:hover {
+    background-color: lightgray; /* 마우스 호버 시 배경색 변경 */
+  }

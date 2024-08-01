@@ -1,0 +1,315 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+html, body {
+    height: 100%;
+  }
+   .main_display {
+    display: flex;
+	width: 100%;
+	height: 100%;
+   }
+   .main1_display {
+    width: 60px;
+	background: #7EAEF5;
+	display: flex;
+	flex-direction: column; /* 요소들을 세로로 배치 */
+	align-items: center; /* 가로 중앙 정렬 */
+  }
+  .main1_1_display{
+    width: 100%;
+	height: 75px;
+	display: flex;
+	flex-direction: column; /* 요소들을 세로로 배치 */
+	align-items: center; /* 가로 중앙 정렬 */
+  }
+  .main1_2_display{
+    width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column; /* 요소들을 세로로 배치 */
+	align-items: center; /* 가로 중앙 정렬 */
+	overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .main1_2_display::-webkit-scrollbar {
+    display:none;
+  }
+  .main1_3_display{
+	height: 90px;
+	width: 100%;
+	margin-bottom: 0.01px; /* 창이 작아져도 위치 유지 */
+	display: flex;
+	flex-direction: column; /* 요소들을 세로로 배치 */
+	align-items: center; /* 가로 중앙 정렬 */
+  }
+  .main2_display {
+    width: 270px;
+	background: #CBE6FC;
+	display: flex;
+	flex-direction: column; /* 요소들을 세로로 배치 */
+	align-items: center; /* 가로 중앙 정렬 */
+  }
+  .main2_1_display{
+    width: 100%;
+	height: 75px;
+	background: #B4DAFA;
+	display: flex;
+	flex-direction: column;
+  }
+  .main2_2_display{
+    width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .main2_2_display::-webkit-scrollbar {
+    display:none;
+  }
+  .main2_3_display{
+	height: 120px;
+	width: 100%;
+	background: #B4DAFA;
+	margin-bottom: 0.1px; /* 창이 작아져도 위치 유지 */
+  }
+  .main3_display {
+	flex: 1;
+	background: #F0F3FA;
+	display: flex;
+	flex-direction: column; /* 요소들을 세로로 배치 */
+	align-items: center; /* 가로 중앙 정렬 */
+  }
+  .main3_1_display{
+    width: 100%;
+	height: 75px;
+	display: flex;
+	flex-direction: column;
+  }
+  .main3_2_display{
+    width: 100%;
+	height: 580px;
+	overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .main3_2_display::-webkit-scrollbar {
+    display:none;
+  }
+  .main3_3_display{
+    width: 100%;
+	flex: 1;
+	margin-bottom: 10px; /* 창이 작아져도 위치 유지 */
+  }
+
+
+  /* -----------------------------------------display--------------------------------------- */
+  .logo_button {
+    width: 50px;  /* 너비를 10px로 설정 */
+    height: 50px; /* 높이를 10px로 설정 */
+    border: 0px solid #000;
+	border-radius: 10px;
+    cursor: pointer;
+	background-color: #7EAEF5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.logo_button img {
+    max-width: 80%; /* 이미지의 최대 너비를 80%로 설정 */
+    max-height: 80%; /* 이미지의 최대 높이를 80%로 설정 */
+}
+
+.logo_button:hover {
+    background-color: #5865F2; /* 마우스 호버 시 배경색 변경 */
+}
+.click_logo_button {
+    width: 50px;  /* 너비를 10px로 설정 */
+    height: 50px; /* 높이를 10px로 설정 */
+    border: 0px solid #000;
+	border-radius: 10px;
+    cursor: pointer;
+	background-color: #5865F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+.click_logo_button img {
+    max-width: 80%; /* 이미지의 최대 너비를 80%로 설정 */
+    max-height: 80%; /* 이미지의 최대 높이를 80%로 설정 */
+}
+  .main1_1_line {
+/*  content: '';  가상 요소의 내용 설정 */
+/*  display: block;  인라인 요소 대신 블록 요소로 변경 */
+  width: 100%; /* 요소의 가로 길이를 100%로 설정하여 가로로 긴 선을 만듦 */
+  height: 2px; /* 선의 높이 설정 */
+  background-color: #FFFFFF; /* 선의 색상 설정 */
+  margin-top: 11px; /* 선을 아래로 이동하는 마진 추가 */
+  }
+  .main2_1_line {
+/*  content: '';  가상 요소의 내용 설정 */
+/*  display: block;  인라인 요소 대신 블록 요소로 변경 */
+  width: 100%; /* 요소의 가로 길이를 100%로 설정하여 가로로 긴 선을 만듦 */
+  height: 2px; /* 선의 높이 설정 */
+  background-color: #888; /* 선의 색상 설정 */
+  margin-top: 26px; /* 선을 아래로 이동하는 마진 추가 */
+  }
+  .main3_1_line {
+/*  content: '';  가상 요소의 내용 설정 */
+/*  display: block;  인라인 요소 대신 블록 요소로 변경 */
+  width: 100%; /* 요소의 가로 길이를 100%로 설정하여 가로로 긴 선을 만듦 */
+  height: 2px; /* 선의 높이 설정 */
+  background-color: #080808; /* 선의 색상 설정 */
+  margin-top: 26px; /* 선을 아래로 이동하는 마진 추가 */
+  }
+  .main1_2_line {
+/*  content: '';  가상 요소의 내용 설정 */
+/*  display: block;  인라인 요소 대신 블록 요소로 변경 */
+  width: 75px; /* 요소의 가로 길이를 100%로 설정하여 가로로 긴 선을 만듦 */
+  height: 2px; /* 선의 높이 설정 */
+  background-color: #FFFFFF; /* 선의 색상 설정 */
+  }
+  .main2_2_line {
+/*  content: '';  가상 요소의 내용 설정 */
+/*  display: block;  인라인 요소 대신 블록 요소로 변경 */
+  width: 270px; /* 요소의 가로 길이를 100%로 설정하여 가로로 긴 선을 만듦 */
+  height: 3px; /* 선의 높이 설정 */
+  background-color: #888; /* 선의 색상 설정 */
+  }
+  
+  .back_button {
+    width: 50px;
+    height: 50px;
+    background-color: #7EAEF5;
+    border: 0px solid #000;
+	border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-top: 15px;
+	transition: background-color 0.3s ease;
+  }
+  .back_button img {
+    max-width: 70%;
+    max-height: 70%;
+  }
+  .back_button:hover {
+    background-color: #5865F2; /* 마우스 호버 시 배경색 변경 */
+	border-radius: 10px;
+  }
+  .click_back_button {
+    width: 50px;
+    height: 50px;
+    background-color: #5865F2;
+    border: 0px solid #000;
+	border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-top: 15px;
+	transition: background-color 0.3s ease;
+  }
+  .click_back_button img {
+    max-width: 70%;
+    max-height: 70%;
+  }
+  .logout_button {
+    width: 50px;
+    height: 50px;
+    background-color: #7EAEF5;
+    border: 0px solid #000;
+	border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-top: 10px;
+	transition: background-color 0.3s ease;
+  }
+  .logout_button img {
+    max-width: 70%;
+    max-height: 70%;
+  }
+  .logout_button:hover {
+    background-color: #5865F2; /* 마우스 호버 시 배경색 변경 */
+	border-radius: 10px;
+  }
+  .menu_text {
+	display: flex;
+	margin-left: 20px;
+	margin-top: 15px;
+	text-shadow: 2px 2px 4px #888;
+  }
+  .click_text {
+	display: flex;
+	margin-left: 20px;
+	margin-top: 15px;
+  }
+  .side_button {
+	display: flex;
+    width: 255px;
+    height: 40px;
+	background-color: #CBE6FC;
+	border: 0px solid;
+	border-radius: 6px;
+	cursor: pointer;
+	justify-content: left;
+    align-items: center;
+	transition: background-color 0.1s ease;
+	margin-top: 3%;
+	margin-left: 3%;
+  }
+  .side_button img {
+	max-width: 80%;
+	max-height: 80%;
+  }
+  .side_button:hover {
+    background-color: #7EAEF5;
+  }
+  .click_side_button {
+	display: flex;
+    width: 255px;
+    height: 40px;
+	background-color: #7EAEF5;
+	border: 0px solid;
+	border-radius: 6px;
+	cursor: pointer;
+	justify-content: left;
+    align-items: center;
+	transition: background-color 0.1s ease;
+	margin-top: 3%;
+	margin-left: 3%;
+  }
+  .click_side_button img {
+	max-width: 80%;
+	max-height: 80%;
+  }
+  .profile_button {
+    width: 50px;
+    height: 50px;
+	background-color: #7EAEF5;
+    border: 0px solid #000;
+	border-radius: 50px;
+	margin-left: 10px;
+	margin-top: 10px;
+  }
+  .profile_button img {
+    max-width: 80%;
+	max-height: 80%;
+  }
+  .main_1_3_display .profile_name {
+    margin-top: 10px;
+  }
+  .main_1_3_display .profile_code {
+    position: absolute;
+    bottom: 2%; /* 부모 요소인 .center_view의 높이에 상대적인 위치 */
+    left: 15%; /* 부모 요소인 .center_view의 너비에 상대적인 위치 */
+  }
